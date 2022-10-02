@@ -1,0 +1,35 @@
+module.exports = {
+  env: {
+    es2021: true,
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'google',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'prettier',
+  ],
+  plugins: ['prettier'],
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+    requireConfigFile: false,
+  },
+  rules: {
+    'prettier/prettier': ['error'],
+    'no-console': 0,
+    'arrow-body-style': 0,
+    'no-underscore-dangle': 0,
+    'prefer-destructuring': ['error', { object: true, array: false }],
+    'radix': 0,
+    'linebreak-style': 0,
+    'max-len': ['error', { code: 120 }],
+    'new-cap': 0,
+    'object-curly-spacing': ['error', 'always'],
+    'valid-jsdoc': 0,
+    'require-jsdoc': 0,
+    'no-unused-vars': ['error', { args: 'all' }],
+  },
+};
