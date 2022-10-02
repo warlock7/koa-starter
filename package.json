@@ -7,6 +7,7 @@
     "start": "nodemon --max-old-space-size=4000 --exec cross-env NODE_ENV=development babel-node -r dotenv/config src/index.js",
     "start-debug": "node-inspector & nodemon node-inspect --max-old-space-size=4000 --exec cross-env NODE_ENV=development babel-node -r dotenv/config src/index.js",
     "build": "webpack --config ./webpack.config.js --mode=production",
+    "prettier:check": "prettier --check 'src/**/*.js'",
     "lint": "eslint .",
     "lint-fix": "eslint --fix --max-warnings=0 ."
   },
