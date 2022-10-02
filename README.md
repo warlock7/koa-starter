@@ -43,3 +43,7 @@ Using prettier and eslint for code lint and formatting.
 #### Logging
 
 Using cabin for logging services.
+
+#### Git commit lint
+
+Using husky and commit lint to lint commit messages.
